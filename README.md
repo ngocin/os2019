@@ -10,12 +10,6 @@ Students are expected to:
 Student Info
 =======================
 
-<<<<<<< HEAD
-* Name: Do Ngoc Anh
-* ID: BI8-007
-=======
-* Name: *Do Ngoc Anh*
-* ID: *BI8-017*
->>>>>>> Praticial Work 1
-
+* Name:Do Ngoc Anh
+* ID: BI8 017
 
