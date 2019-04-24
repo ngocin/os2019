@@ -1,0 +1,32 @@
+tomomi@tomomi-ubuntu:~$ ps man
+  PID TTY      STAT   TIME COMMAND
+  902 tty1     -      0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SH
+    - -        Ssl+   0:00 -
+    - -        Ssl+   0:00 -
+    - -        Ssl+   0:00 -
+  904 tty1     -      2:26 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/1
+    - -        Sl+    1:20 -
+    - -        Sl+    1:05 -
+ 3662 pts/0    -      0:00 bash
+    - -        Ss     0:00 -
+ 3680 pts/0    -      0:01 gnome-calculator
+    - -        Sl+    0:01 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+    - -        Sl+    0:00 -
+ 3797 pts/1    -      0:00 bash
+    - -        Ss     0:00 -
+ 3806 pts/1    -      0:00 ps man
+    - -        R+     0:00 -
+
+tomomi@tomomi-ubuntu:~$ ps man | grep gnome-calculator
+ 3680 pts/0    -      0:01 gnome-calculator
+ 3811 pts/1    -      0:00 grep --color=auto gnome-calculator
+tomomi@tomomi-ubuntu:~$ cat /proc/3680/status
+State:	S (sleeping)
+tomomi@tomomi-ubuntu:~$ kill -s STOP 3680
+tomomi@tomomi-ubuntu:~$ kill -s CONT 3680
+tomomi@tomomi-ubuntu:~$ kill -s KILL 3680
+
+
+
