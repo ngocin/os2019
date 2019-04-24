@@ -1,0 +1,23 @@
+tomomi@tomomi-ubuntu:~$ ls -la | grep list
+tomomi@tomomi-ubuntu:~$ wc -l /etc/passwd
+42 /etc/passwd
+tomomi@tomomi-ubuntu:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        2040468      709440      590652       39012      740376     1139524
+Swap:        945464           0      945464
+tomomi@tomomi-ubuntu:~$ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              1
+On-line CPU(s) list: 0
+Thread(s) per core:  1
+Core(s) per socket:  1
+Socket(s):           1
+=>
+So my computer has 1 cpu sicket
+Socket : 1 
+CPU socket has 1 physical core . Hence , the computer has 1 physical cores in total 
+tomomi@tomomi-ubuntu:~$ find /home/tomomi/Pictures -name "*.jpg" | wc -l
+0
+
