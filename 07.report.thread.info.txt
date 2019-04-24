@@ -1,0 +1,7 @@
+tomomi@tomomi-ubuntu:~$ ps -o nlwp 4964
+NLWP
+  55
+
+tomomi@tomomi-ubuntu:~$ ls /proc/4964/task | wc -w
+50
+
